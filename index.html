@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICDP</title> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                  <a href="index.html">Home</a>
+                </div>
+        
+                <div class="nav-link-wrapper">
+                  <a href="about.html">About</a>
+                </div>
+              </div>
+        
+              <div class="right-side">
+                <div class="brand">
+                  I CAN DO PROGRAMMING
+                </div>
+              </div>
+            </div>
+        
+            <div class="content-wrapper">
+              <div class="portfolio-items-wrapper">
+        
+                <a href="first.html">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/meeting1.jpg)" ></div>
+        
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="images/logo/logo1.png" alt="">
+                    </div>
+        
+                    <div class="subtitle">First Meeting: Time complexity & Binary</div>
+                  </div>
+                </div>
+                </a>
+        
+                <a href="second.html">
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/meeting2.jpg)"></div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="images/logo/logo2.png" alt="">
+                    </div>
+        
+                    <div class="subtitle">Second Meeting: What is an Algorithm? Data type & Operation</div>
+                  </div>
+                </div>
+                </a>
+        
+                <a href="third.html">
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/meeting3.jpg)"></div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="images/logo/logo3.png" alt="">
+                    </div>
+        
+                    <div class="subtitle">Third Meeting: Iteration & Array + Examples in C</div>
+                  </div>
+                </div>
+                </a>
+        
+                <a href="fourth.html">
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/meeting4.jpg)"></div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="images/logo/logo4.png" alt="">
+                    </div>
+        
+                    <div class="subtitle">Fourth Meeting: String, Array & Basic Pointer</div>
+                  </div>
+                </div>
+            </a>
+        
+            <a href="fifth.html">
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/meeting5.jpg)"></div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="images/logo/logo5.png" alt="">
+                    </div>
+        
+                    <div class="subtitle">Fifth Meeting: Search methods & best and worst cases</div>
+                  </div>
+                </div>
+            </a>
+        
+            <a href="sixth.html">
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/meeting6.jpg)"></div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <img src="images/logo/logo6.png" alt="">
+                    </div>
+        
+                    <div class="subtitle">Sixth Meeting: Malloc, struct & linked list</div>
+                  </div>
+                </div>
+            </a>
+        
+        
+              </div>
+            </div>
+          </div>
+        
+    </body>
+    <script>
+        const portfolioitem = document.querySelectorAll('.portfolio-item-wrapper')
+    
+        portfolioitem.forEach(portfolioitem => {
+            portfolioitem.addEventListener('mouseover', () => {
+                portfolioitem.childNodes[1].classList.add('img-darken');
+            })
+    
+            portfolioitem.addEventListener('mouseout', () => {
+                portfolioitem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    
+    </script>
+    </html>
